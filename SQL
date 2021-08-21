@@ -1,1 +1,13 @@
+--A customer or patients first and last name, email address, sign-up date, and # of mins in the store/hospital, etc.  
+--Your table should also keep track of their unique ID #. (serial)
+--Feel free to create using anything you want – the choice is yours!  
+--Remember – we’re focusing on creating a table – not inserting information yet. 
 
+CREATE TABLE Patient (
+    Customer_id serial PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+   last_name VARCHAR(50) NOT NULL,
+  address_id VARCHAR(50) NOT NULL,
+   email VARCHAR(50)UNIQUE NOT NULL,
+	Sign_up_date TIMESTAMP,
+	time_in_hospital smallint NOT NULL);
